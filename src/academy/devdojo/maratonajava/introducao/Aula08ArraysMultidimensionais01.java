@@ -23,8 +23,8 @@ public class Aula08ArraysMultidimensionais01 {
 
 		System.out.println("----------------------");
 
-		for (int[] arrBase : days){
-			for (int arrBase2 : arrBase){
+		for (int[] arrBase : days) {
+			for (int arrBase2 : arrBase) {
 				System.out.println(arrBase2);
 			}
 		}
