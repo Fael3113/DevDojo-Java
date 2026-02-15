@@ -1,0 +1,20 @@
+package dev.rafael.maratonajava.javacore.Npolimorfismo.test;
+
+import dev.rafael.maratonajava.javacore.Npolimorfismo.dominio.Computador;
+import dev.rafael.maratonajava.javacore.Npolimorfismo.dominio.Televisao;
+import dev.rafael.maratonajava.javacore.Npolimorfismo.dominio.Tomate;
+import dev.rafael.maratonajava.javacore.Npolimorfismo.servico.CalculadoraImposto;
+
+public class ProdutoTest01 {
+	public static void main(String[] args) {
+		Computador computador = new Computador("NUC1017", 11000);
+		Tomate tomate = new Tomate("Tomate cereja", 3);
+		Televisao televisao = new Televisao("Samsung 50'",4599);
+
+		CalculadoraImposto.calcularImposto(computador);
+		System.out.println("-------------");
+		CalculadoraImposto.calcularImposto(tomate);
+		System.out.println("-------------");
+		CalculadoraImposto.calcularImposto(televisao);
+	}
+}
