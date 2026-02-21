@@ -14,7 +14,7 @@ public class SetTest01 {
 		mangas.add(new Manga(1L,"Vagabond",22.99));
 		mangas.add(new Manga(3L,"Vinland Saga",20.4));
 		mangas.add(new Manga(2L,"Berserk",10.10));
-		mangas.add(new Manga(2L,"Berserk",10.10)); //Não permitem duplicata
+		mangas.add(new Manga(2L,"Berserk",10.10)); //Não permitem duplicata pelo critério do hashCode() e equals()
 
 		for(Manga manga: mangas){
 			System.out.println(manga);

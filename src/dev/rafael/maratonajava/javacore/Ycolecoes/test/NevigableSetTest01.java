@@ -35,7 +35,7 @@ public class NevigableSetTest01 {
 		mangas.add(new Manga(3L,"Vinland Saga",20.4));
 		mangas.add(new Manga(2L,"Berserk",30.10));
 		mangas.add(new Manga(10L,"Aragon",2.10));
-		//Não aceita duplicata de acordo com o Comparable/Comparator configurado, independemente do equals() ou hashCode()
+		//Não aceita duplicata de acordo com o parâmetro do Comparable/Comparator configurado, mesmo que sejam considerado iguais pelo equals() ou hashCode()
 		for (Manga manga : mangas) {
 			System.out.println(manga);
 		}
