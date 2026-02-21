@@ -25,7 +25,7 @@ public class MangaSortTest01 {
 			System.out.println(manga);
 		}
 //		Collections.sort(mangas, new MangaByIdComparator());
-		mangas.sort(new MangaByIdComparator());
+		mangas.sort(new MangaByIdComparator()); //Comparator tem prioridade sobre o Comparable
 		System.out.println("-----");
 		for (Manga manga : mangas) {
 			System.out.println(manga);
